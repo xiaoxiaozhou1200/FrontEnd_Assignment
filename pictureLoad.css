@@ -1,0 +1,34 @@
+section
+{
+    margin: 0 auto;
+    /* Set the section part's margin as 0 that can feat to any situation */
+}
+
+#img
+{
+    /* max-height: 100px;
+    max-width: 100px; */
+    /* Do not need to set the height and width of the picture as it can be same as the box */
+}
+
+.btn
+{
+    width: 150px;
+    background-color: rgb(18, 138, 226);
+    display: block;
+    /* Block element have line breaks at the start and the end of this element */
+    color: #fff;
+    padding: 10px 15px;
+    /* The top and bottom padding is 10px and the left and right padding is 15px */
+    font: 20px Helvetica;
+    text-decoration: none;
+    /* Default text with no decoration */
+    text-align: center;
+    margin: 1px 0;
+}
+
+#file
+{
+    display: none;
+    /* Set the display of the file part as none cause the style of file is not beautiful */
+}

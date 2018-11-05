@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang = "en" dir = "ltr">
+    <head>
+        <meta charset = "UTF-8">
+        <meta name = "viewport" content = "width=device-width, initial-scale=1.0">
+        <meta http-equiv = "X-UA-Compatible" content = "ie=edge">
+        <title>Zhu Mibin_Extra Credit Assignment</title>
+
+        <link rel = "stylesheet" type = "text/css" href = "pictureDisplay.css" media = "screen">
+        <link rel = "stylesheet" type = "text/css" href = "pictureLoad.css" media = "screen">
+        <link rel = "stylesheet" type = "text/css" href = "Font.css" media = "screen">
+    </head>
+
+    <body>
+        <div id = "toolbar">
+        <div id = "title"> Rich-text Editor </div>
+            <button id = "bold" onclick = "makeBold()"> Bold </button>
+            <button id = "italic" onclick = "makeItalic()"> Italic </button>
+            <button id = "underline" onclick = "doUnderline()"> Underline </button>
+            <select name="colorselector" id="colorselector" onchange="changeColor()">
+                <option>Default Color</option>
+                <option value="one">红色 </option>
+                <option value="two">绿色 </option>
+            </select>
+        </div>
+
+        <button class="addBtn" id="addImageBtn">Add Photo</button>
+        <button class="addBtn" id="addTextBtn">Add Text</button>
+        <a id = "addphoto" href = "#" class = "btn">+ Add Photo</a>
+        <a id = "removephoto" href = "#" class = "btn"> Remove Photo</a>
+        <div id = "father">
+            <div id = "box">
+                <img src = "http://www.randomlengthsnews.com/wp-content/themes/gonzo/images/no-image-blog-one.png" id = "img"/>
+                <div id = "scale"></div>
+                <input type = "file" name = "file" id = "file" accept = "image/*;capture=camera" capture = "camera" />
+            </div>
+
+            <div id = "input" name = "userInput" contenteditable = "true" style = "width: 99%; height: 91%; border: 2px solid rgb(0, 0, 0);">Start writing here....
+                <div id="movebar"></div>
+                <div id = "textscale"></div>
+            </div>
+
+        </div>
+
+        <script type = "text/javascript" src = "Picture.js"></script>
+        <script type = "text/javascript" src = "PictureLoad.js"></script>
+        <script type = "text/javascript" src = "Text.js"></script>
+        <script type = "text/javascript" src = "Font.js"></script>
+    </body>
+</html>

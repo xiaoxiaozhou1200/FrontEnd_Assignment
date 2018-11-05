@@ -1,0 +1,65 @@
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <style>*{margin: 0;padding: 0;}</style>
+</head>
+<body>
+<div id="demo" style="position:absolute;width: 100px;height: 100px;background: #ccc;border:solid 1px #ccc;">按住左键拖动</div>
+</body>
+<script>
+    window.onload = function() {
+        //用于确定是否是拖拽的对象
+        var drag;
+        //鼠标位于目标元素上的时候距离目标元素的位置
+        var x,y;
+        //取得元素
+        var ele = document.getElementById('demo');
+
+        //鼠标按下去
+        ele.onmousedown = function(evt) {
+            //取得事件对象
+            _event = evt || window.event;
+            //设置drag元素
+            target = _event.target || _event.srcElement;
+            x = _event.clientX - target.offsetLeft;
+            y = _event.clientY - target.offsetTop;
+            drag = target;
+        }
+
+        //鼠标移动
+        document.onmousemove = function(evt) {
+            //确定鼠标是在目标元素上按下去后才开始移动
+            if(drag) {
+                _event = evt || window.event;
+
+                //设置边界
+                var left = _event.clientX - x;
+                var top = _event.clientY - y;
+                body = document.documentElement || document.body;
+                if (left < 0) left = 0;
+                if (left > body.offsetWidth - drag.offsetWidth) left = body.offsetWidth - drag.offsetWidth;
+                if (top < 0) top = 0;
+                if (top > (body.offsetHeight - drag.offsetHeight)) top = (body.offsetHeight - drag.offsetHeight);
+
+                //设置样式
+                drag.style.cursor = 'move';
+                drag.style.border = 'dashed 1px red';
+                drag.style.left = left + 'px';
+                drag.style.top = top + 'px';
+            }
+        }
+
+        //松开鼠标
+        document.onmouseup = function(evt) {
+            if(drag) {
+                //卸载样式
+                drag.style.cursor = '';
+                drag.style.border = 'dashed 1px #ccc';
+            }
+            drag = null;
+        }
+
+    }
+</script>
+</html>
