@@ -1,0 +1,15 @@
+{
+  "name": "pptapp",
+  "version": "1.0.0",
+  "description": "extra assignment",
+  "main": "app.js",
+  "scripts": {
+    "start": "webpack",
+    "test": "test"
+  },
+  "author": "zhouran",
+  "license": "ISC",
+  "devDependencies": {
+    "webpack": "^4.25.1"
+  }
+}

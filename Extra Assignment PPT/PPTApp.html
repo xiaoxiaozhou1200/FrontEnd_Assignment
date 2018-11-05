@@ -4,13 +4,11 @@
         <meta charset = "UTF-8">
         <meta name = "viewport" content = "width=device-width, initial-scale=1.0">
         <meta http-equiv = "X-UA-Compatible" content = "ie=edge">
-        <title>Zhu Mibin_Extra Credit Assignment</title>
-
-        <link rel = "stylesheet" type = "text/css" href = "pictureDisplay.css" media = "screen">
-        <link rel = "stylesheet" type = "text/css" href = "pictureLoad.css" media = "screen">
-        <link rel = "stylesheet" type = "text/css" href = "Font.css" media = "screen">
+        <title>Power Point App</title>
+        <!--<link rel = "stylesheet" type = "text/css" href = "pictureDisplay.css" media = "screen">-->
+        <!--<link rel = "stylesheet" type = "text/css" href = "pictureLoad.css" media = "screen">-->
+        <!--<link rel = "stylesheet" type = "text/css" href = "Font.css" media = "screen">-->
     </head>
-
     <body>
         <div id = "toolbar">
         <div id = "title"> Rich-text Editor </div>
@@ -19,8 +17,8 @@
             <button id = "underline" onclick = "doUnderline()"> Underline </button>
             <select name="colorselector" id="colorselector" onchange="changeColor()">
                 <option>Default Color</option>
-                <option value="one">红色 </option>
-                <option value="two">绿色 </option>
+                <option value="one">Red</option>
+                <option value="two">Green</option>
             </select>
         </div>
 
@@ -41,10 +39,6 @@
             </div>
 
         </div>
-
-        <script type = "text/javascript" src = "Picture.js"></script>
-        <script type = "text/javascript" src = "PictureLoad.js"></script>
-        <script type = "text/javascript" src = "Text.js"></script>
-        <script type = "text/javascript" src = "Font.js"></script>
+        <script src="./dist/bundle.js"></script>
     </body>
 </html>
