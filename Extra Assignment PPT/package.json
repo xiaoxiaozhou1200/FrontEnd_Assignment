@@ -10,6 +10,13 @@
   "author": "zhouran",
   "license": "ISC",
   "devDependencies": {
-    "webpack": "^4.25.1"
+    "@babel/core": "^7.1.2",
+    "babel-loader": "^8.0.4",
+    "babel-preset-env": "^1.7.0",
+    "babel-preset-react": "^6.24.1",
+    "css-loader": "^1.0.1",
+    "style-loader": "^0.23.1",
+    "webpack": "^4.25.1",
+    "webpack-cli": "^3.1.2"
   }
 }

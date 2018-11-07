@@ -1,0 +1,7 @@
+@import "Font.css";
+@import "pictureDisplay.css";
+@import "pictureLoad.css";
+
+#input{
+    width: 99%; height: 91%; border: 2px solid rgb(0, 0, 0);
+}

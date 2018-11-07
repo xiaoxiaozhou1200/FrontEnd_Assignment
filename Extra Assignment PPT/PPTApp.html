@@ -5,16 +5,13 @@
         <meta name = "viewport" content = "width=device-width, initial-scale=1.0">
         <meta http-equiv = "X-UA-Compatible" content = "ie=edge">
         <title>Power Point App</title>
-        <!--<link rel = "stylesheet" type = "text/css" href = "pictureDisplay.css" media = "screen">-->
-        <!--<link rel = "stylesheet" type = "text/css" href = "pictureLoad.css" media = "screen">-->
-        <!--<link rel = "stylesheet" type = "text/css" href = "Font.css" media = "screen">-->
     </head>
     <body>
         <div id = "toolbar">
         <div id = "title"> Rich-text Editor </div>
-            <button id = "bold" onclick = "makeBold()"> Bold </button>
-            <button id = "italic" onclick = "makeItalic()"> Italic </button>
-            <button id = "underline" onclick = "doUnderline()"> Underline </button>
+            <input id = "boldBtn" type="image" src="icjiacu24px.png">
+            <input id = "italicBtn" type="image" src="icxieti24px.png">
+            <input id = "underlineBtn" type="image" src="icxiahuaxian24px.png">
             <select name="colorselector" id="colorselector" onchange="changeColor()">
                 <option>Default Color</option>
                 <option value="one">Red</option>
@@ -24,21 +21,19 @@
 
         <button class="addBtn" id="addImageBtn">Add Photo</button>
         <button class="addBtn" id="addTextBtn">Add Text</button>
-        <a id = "addphoto" href = "#" class = "btn">+ Add Photo</a>
+        <a id = "addphoto" href = "#" class = "btn">Add Photo</a>
         <a id = "removephoto" href = "#" class = "btn"> Remove Photo</a>
         <div id = "father">
-            <div id = "box">
-                <img src = "http://www.randomlengthsnews.com/wp-content/themes/gonzo/images/no-image-blog-one.png" id = "img"/>
-                <div id = "scale"></div>
-                <input type = "file" name = "file" id = "file" accept = "image/*;capture=camera" capture = "camera" />
-            </div>
-
-            <div id = "input" name = "userInput" contenteditable = "true" style = "width: 99%; height: 91%; border: 2px solid rgb(0, 0, 0);">Start writing here....
-                <div id="movebar"></div>
-                <div id = "textscale"></div>
-            </div>
-
         </div>
         <script src="./dist/bundle.js"></script>
+        <script>
+            function dop(id){
+                document.getElementById(id).style.display = "none";
+            }
+
+            function textdop(id) {
+                document.getElementById(id).style.display = "none";
+            }
+        </script>
     </body>
 </html>
