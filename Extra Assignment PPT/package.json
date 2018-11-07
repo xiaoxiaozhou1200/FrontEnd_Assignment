@@ -5,7 +5,8 @@
   "main": "app.js",
   "scripts": {
     "start": "webpack",
-    "test": "test"
+    "test": "test",
+    "run": "node_modules/.bin/webpack-dev-server --open"
   },
   "author": "zhouran",
   "license": "ISC",
