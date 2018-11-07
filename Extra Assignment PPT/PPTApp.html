@@ -30,12 +30,12 @@
         <div id = 'slidebar'>
 
         </div>
-        <!--<div id = 'fatherdiv'>-->
-
-        <!--</div>-->
-        <div id = "father">
+        <div id = 'fatherdiv'>
 
         </div>
+        <!--<div id = "father">-->
+
+        <!--</div>-->
     </div>
     <script src="./dist/bundle.js"></script>
     <script>
@@ -48,6 +48,19 @@
         function showtoolbar(){
             document.getElementById('toolbar').style.display = "";
         }
+
+        let addSlideBtn = document.getElementById("addSlideBtn");
+        addSlideBtn.addEventListener('click', newSlideElement);
+
+        let addImageBtn = document.getElementById("addImageBtn");
+        addImageBtn.addEventListener('click', newImgElement);
+
+        let addTextBtn = document.getElementById("addTextBtn");
+        addTextBtn.addEventListener('click', newTextElement);
+
+
+
+
     </script>
     </body>
 </html>

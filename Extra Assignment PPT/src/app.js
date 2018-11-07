@@ -1,20 +1,12 @@
 import  'CSS/main.css';
-import {newImgElement} from 'Root/AddImage';
-import {newTextElement} from 'Root/AddText';
+// import {newImgElement} from 'Root/AddImage';
+// import {newTextElement} from 'Root/AddText';
 import {changeBold} from 'Root/FontBold';
 import {changeItalic} from 'Root/FontItalic';
 import {doUnderline} from 'Root/FontUnder';
-import {newSlideElement} from 'Root/AddSlide';
+// import {newSlideElement} from 'Root/AddSlide';
 
 
-let addImageBtn = document.getElementById("addImageBtn");
-addImageBtn.addEventListener('click', newImgElement);
-
-let addTextBtn = document.getElementById("addTextBtn");
-addTextBtn.addEventListener('click', newTextElement);
-
-let addSlideBtn = document.getElementById("addSlideBtn");
-addSlideBtn.addEventListener('click', newSlideElement);
 
 let addBold = document.getElementById("boldBtn");
 addBold.addEventListener('click', changeBold);
