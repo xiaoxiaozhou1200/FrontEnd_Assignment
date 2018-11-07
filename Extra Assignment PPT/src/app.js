@@ -4,16 +4,17 @@ import {newTextElement} from 'Root/AddText';
 import {changeBold} from 'Root/FontBold';
 import {changeItalic} from 'Root/FontItalic';
 import {doUnderline} from 'Root/FontUnder';
-import {dop} from 'Root/clickremove';
+import {newSlideElement} from 'Root/AddSlide';
+
 
 let addImageBtn = document.getElementById("addImageBtn");
 addImageBtn.addEventListener('click', newImgElement);
 
-// let a = document.getElementById("box");
-// a.addEventListener('ondblclick', deleteBox);
-
 let addTextBtn = document.getElementById("addTextBtn");
 addTextBtn.addEventListener('click', newTextElement);
+
+let addSlideBtn = document.getElementById("addSlideBtn");
+addSlideBtn.addEventListener('click', newSlideElement);
 
 let addBold = document.getElementById("boldBtn");
 addBold.addEventListener('click', changeBold);
@@ -32,9 +33,24 @@ function changeColor()
     let select = document.getElementById("colorselector").value;
     if(select=="two")
     {
-
         document.execCommand('ForeColor',false,'#008000');
     }
-    else document.execCommand('ForeColor',false,'#FF0000');
+    else if(select=="three")
+    {
+        document.execCommand('ForeColor',false,'#1E90FF');
+    }
+    else if(select=="four")
+    {
+        document.execCommand('ForeColor',false,'#FFFF00')
+    }
+    else if(select=="one")
+    {
+        document.execCommand('ForeColor',false,'#FF0000');
+    }
+    else {
+        document.execCommand('ForeColor',false,'#000000');
+    }
 }
+
+
 

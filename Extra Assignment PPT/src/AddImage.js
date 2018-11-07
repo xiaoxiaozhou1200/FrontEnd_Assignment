@@ -1,8 +1,10 @@
 var flag = 0;
+// var count = 0;
 
 export function newImgElement() {
 
     flag = flag+1;
+    // count = count+1;
     let box = document.createElement("div");
     box.setAttribute('class','box');
     box.setAttribute("id", "box" + flag);
@@ -10,12 +12,15 @@ export function newImgElement() {
 
     let img = document.createElement("img");
     img.setAttribute('id', 'img'+flag);
+    img.setAttribute('class', 'newimg');
     let file = document.createElement("input");
     file.setAttribute('id', 'file'+flag);
+    file.setAttribute('class', 'newfile');
     file.setAttribute('type','file');
     file.setAttribute('capture','camera');
     let scale = document.createElement("div");
     scale.setAttribute('id', 'scale'+flag);
+    scale.setAttribute('class', 'newscale');
     let fa = document.getElementById('father');
     fa.appendChild(box);
     box.appendChild(scale);

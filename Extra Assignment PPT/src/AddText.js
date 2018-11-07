@@ -1,14 +1,17 @@
 var flag = 0;
+// var count = 0;
 
 export function newTextElement() {
 
     flag = flag+1;
+    // count = count+1;
 
     let textinput = document.createElement("div");
     textinput.setAttribute('id','textid' + flag);
     textinput.setAttribute('class','textinput');
     textinput.setAttribute('contenteditable','true');
     textinput.setAttribute('ondblclick', 'textdop(this.id)');
+    textinput.setAttribute('onclick', 'showtoolbar()');
 
     let movebar = document.createElement("div");
     movebar.setAttribute('class','movebar');

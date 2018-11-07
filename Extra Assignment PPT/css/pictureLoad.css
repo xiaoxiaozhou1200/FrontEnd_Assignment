@@ -4,13 +4,6 @@ section
     /* Set the section part's margin as 0 that can feat to any situation */
 }
 
-#img
-{
-    /* max-height: 100px;
-    max-width: 100px; */
-    /* Do not need to set the height and width of the picture as it can be same as the box */
-}
-
 .btn
 {
     width: 150px;

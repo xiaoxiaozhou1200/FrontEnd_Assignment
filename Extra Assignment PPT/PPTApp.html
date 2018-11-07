@@ -1,39 +1,53 @@
 <!DOCTYPE html>
 <html lang = "en" dir = "ltr">
-    <head>
-        <meta charset = "UTF-8">
-        <meta name = "viewport" content = "width=device-width, initial-scale=1.0">
-        <meta http-equiv = "X-UA-Compatible" content = "ie=edge">
-        <title>Power Point App</title>
-    </head>
+<head>
+    <meta charset = "UTF-8">
+    <meta name = "viewport" content = "width=device-width, initial-scale=1.0">
+    <meta http-equiv = "X-UA-Compatible" content = "ie=edge">
+    <title>Power Point App</title>
+</head>
     <body>
-        <div id = "toolbar">
-        <div id = "title"> Rich-text Editor </div>
-            <input id = "boldBtn" type="image" src="icjiacu24px.png">
-            <input id = "italicBtn" type="image" src="icxieti24px.png">
-            <input id = "underlineBtn" type="image" src="icxiahuaxian24px.png">
-            <select name="colorselector" id="colorselector" onchange="changeColor()">
-                <option>Default Color</option>
-                <option value="one">Red</option>
-                <option value="two">Green</option>
-            </select>
-        </div>
-
+    <div id = "wholetitle">Power Point App</div>
+    <div id = "toolbar" style="display: none">
+        <div id = "title"> Text Editor </div>
+        <input id = "boldBtn" type="image" src="bold.png">
+        <input id = "italicBtn" type="image" src="italic.png">
+        <input id = "underlineBtn" type="image" src="underline.png">
+        <select name="colorselector" id="colorselector" onchange="changeColor()">
+            <option>Default Color</option>
+            <option value="one">Red</option>
+            <option value="two">Green</option>
+            <option value="three">Blue</option>
+            <option value="four">Yellow</option>
+        </select>
+    </div>
+    <div id="mainbar">
         <button class="addBtn" id="addImageBtn">Add Photo</button>
         <button class="addBtn" id="addTextBtn">Add Text</button>
-        <a id = "addphoto" href = "#" class = "btn">Add Photo</a>
-        <a id = "removephoto" href = "#" class = "btn"> Remove Photo</a>
-        <div id = "father">
-        </div>
-        <script src="./dist/bundle.js"></script>
-        <script>
-            function dop(id){
-                document.getElementById(id).style.display = "none";
-            }
+        <button class="addBtn" id="addSlideBtn">Add Slide</button>
+    </div>
+    <div>
+        <div id = 'slidebar'>
 
-            function textdop(id) {
-                document.getElementById(id).style.display = "none";
-            }
-        </script>
+        </div>
+        <!--<div id = 'fatherdiv'>-->
+
+        <!--</div>-->
+        <div id = "father">
+
+        </div>
+    </div>
+    <script src="./dist/bundle.js"></script>
+    <script>
+        function dop(id){
+            document.getElementById(id).style.display = "none";
+        }
+        function textdop(id) {
+            document.getElementById(id).style.display = "none";
+        }
+        function showtoolbar(){
+            document.getElementById('toolbar').style.display = "";
+        }
+    </script>
     </body>
 </html>
