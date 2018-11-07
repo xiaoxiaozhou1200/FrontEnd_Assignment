@@ -2,7 +2,7 @@ var path = require('path');
 
 module.exports = {
     mode: 'development',
-    entry: ['./src/app.js','./src/AddSlide.js','./src/AddImage','./src/AddText'],
+    entry: ['./src/app.js','./src/AddSlide.js'],
     resolve: {
         alias: {
             Root: path.resolve(__dirname, 'src/'),
